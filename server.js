@@ -58,7 +58,7 @@ db.serialize(() => {
 
     // Insert an admin user for testing
     const adminPassword = bcrypt.hashSync('@Madhav1234', 8);
-    db.run(`INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)`, ['Nadhav', 'madhavtokala@gmail.com', adminPassword, 'admin']);
+    db.run(`INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)`, ['Madhav', 'madhavtokala@gmail.com', adminPassword, 'admin']);
 });
 
 // Middleware to verify token
